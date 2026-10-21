@@ -49,9 +49,9 @@ Media: 7.0
 | # | Paso del programa | Qué ocurre | Componentes que intervienen | Zona de memoria |
 |---|-------------------|------------|-----------------------------|-----------------|
 | 1 | Escribes `java Media.java` y pulsas Intro | El sistema operativo crea un proceso Java. Se compila el código fuente y la JVM comienza la ejecución del programa. | SSD, sistema operativo, RAM, CPU y JVM. | Espacio de memoria del proceso: código, datos, Stack y Heap. |
-| 2 | `Scanner entrada = new Scanner(System.in);` | | | |
-| 3 | `System.out.print("¿Cuántas notas? ");` | | | |
-| 4 | `int cantidad = entrada.nextInt();` | | | |
+| 2 | `Scanner entrada = new Scanner(System.in);` | Se crea un objeto para leer la entrada. | | |
+| 3 | `System.out.print("¿Cuántas notas? ");` | Se muestra una invitación. | | |
+| 4 | `int cantidad = entrada.nextInt();` | Esperando un número del usuario | | |
 | 5 | `int[] notas = new int[cantidad];` | | | |
 | 6 | El bucle que pide y lee cada nota | | | |
 | 7 | `double media = calcularMedia(notas);` | | | |
