@@ -54,7 +54,7 @@ Media: 7.0
 | 4 | `int cantidad = entrada.nextInt();` | Esperando un número del usuario | | |
 | 5 | `int[] notas = new int[cantidad];` | | | |
 | 6 | El bucle que pide y lee cada nota | | | |
-| 7 | `double media = calcularMedia(notas);` | | | |
+| 7 | `double media = calcularMedia(notas);` | создаётся кадр метода в Stack, метод читает элементы массива в Heap, вычисляет среднее и возвращает результат в main() | | |
 | 8 | `System.out.println("Media: " + media);` | | | |
 | 9 | Termina `main` | | | |
 
