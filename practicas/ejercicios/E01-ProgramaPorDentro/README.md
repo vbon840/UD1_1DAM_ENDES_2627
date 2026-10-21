@@ -31,12 +31,12 @@ Media: 7.0
 
 | Dato | Valor |
 |------|-------|
-| Sistema operativo | |
-| Herramienta que has usado | |
-| Nombre del proceso | |
+| Sistema operativo | Windows 11 Pro Education |
+| Herramienta que has usado | Símbolo del sistema |
+| Nombre del proceso | java.exe |
 | Identificador (PID) |18328, 7248 |
-| Memoria que ocupa | 00 |
-| Procesador (%) | |
+| Memoria que ocupa | 1.2.. K, 66.432 K |
+| Procesador (%) | 00 |
 | Estado en que está, según el tema 1, y por qué | |
 
 ![Proceso de Java en el administrador de procesos](img/proceso.png)
