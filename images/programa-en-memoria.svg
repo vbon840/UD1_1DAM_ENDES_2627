@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" width="900" height="620" role="img" aria-labelledby="t d">
+  <title id="t">Zonas de memoria de un proceso</title>
+  <desc id="d">La memoria de un proceso, de las direcciones altas a las bajas: pila, espacio libre, montículo, datos estáticos y código. Para el programa PrecioConIva, en el momento en que se ejecuta calcularPrecioFinal, la pila guarda las tramas de main y de calcularPrecioFinal; el montículo, el objeto Scanner y las cadenas; los datos estáticos, la constante IVA; y el código, las instrucciones de los dos métodos.</desc>
+  <defs>
+    <marker id="f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+  </defs>
+  <style>
+    text { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #1e293b; }
+    .mono { font-family: 'Cascadia Code', Consolas, 'DejaVu Sans Mono', monospace; font-size: 15px; }
+    .zona { font-size: 20px; font-weight: 700; }
+    .nota { font-size: 15px; fill: #334155; }
+    .peq { font-size: 14px; fill: #475569; }
+  </style>
+
+  <rect width="900" height="620" rx="16" fill="#f8fafc" stroke="#cbd5e1"/>
+
+  <text x="40" y="44" font-size="22" font-weight="700">Memoria del proceso de PrecioConIva</text>
+  <text x="40" y="92" class="peq">direcciones altas</text>
+  <text x="40" y="585" class="peq">direcciones bajas</text>
+  <path d="M150 100V570" stroke="#94a3b8" stroke-width="2" marker-end="url(#f)"/>
+
+  <!-- Pila -->
+  <rect x="170" y="70" width="330" height="170" rx="8" fill="#fde7c7" stroke="#f89820" stroke-width="2"/>
+  <text x="185" y="96" class="zona">Pila (stack)</text>
+  <rect x="185" y="108" width="300" height="70" rx="6" fill="#ffffff" stroke="#f89820"/>
+  <text x="195" y="128" class="peq">trama de main</text>
+  <text x="195" y="149" class="mono">entrada → (referencia)</text>
+  <text x="195" y="169" class="mono">precio = 100.0   total (sin valor)</text>
+  <rect x="185" y="186" width="300" height="44" rx="6" fill="#ffffff" stroke="#f89820" stroke-dasharray="5 4"/>
+  <text x="195" y="205" class="peq">trama de calcularPrecioFinal (en curso)</text>
+  <text x="195" y="223" class="mono">precio = 100.0</text>
+  <path d="M335 244V282" stroke="#475569" stroke-width="2" marker-end="url(#f)"/>
+  <text x="345" y="268" class="peq">crece hacia abajo</text>
+
+  <!-- Libre -->
+  <rect x="170" y="288" width="330" height="50" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-dasharray="6 5"/>
+  <text x="335" y="319" class="peq" text-anchor="middle">memoria libre</text>
+
+  <!-- Montículo -->
+  <path d="M335 380V344" stroke="#475569" stroke-width="2" marker-end="url(#f)"/>
+  <text x="345" y="366" class="peq">crece hacia arriba</text>
+  <rect x="170" y="384" width="330" height="92" rx="8" fill="#d5f3ec" stroke="#2a9d8f" stroke-width="2"/>
+  <text x="185" y="410" class="zona">Montículo (heap)</text>
+  <text x="185" y="436" class="mono">objeto Scanner</text>
+  <text x="185" y="460" class="mono">"Precio sin IVA: " (String)</text>
+
+  <!-- Datos -->
+  <rect x="170" y="484" width="330" height="40" rx="8" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+  <text x="185" y="510" class="zona" font-size="17">Datos estáticos</text>
+  <text x="345" y="510" class="mono">IVA = 0.21</text>
+
+  <!-- Código -->
+  <rect x="170" y="532" width="330" height="48" rx="8" fill="#e2e8f0" stroke="#64748b" stroke-width="2"/>
+  <text x="185" y="561" class="zona" font-size="17">Código</text>
+  <text x="262" y="561" class="mono">main, calcularPrecioFinal</text>
+
+  <!-- Flecha de referencia de la pila al montículo -->
+  <path d="M485 143 C 560 143, 560 431, 505 431" fill="none" stroke="#2a9d8f" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#f)"/>
+
+  <!-- Notas -->
+  <text x="580" y="110" class="nota" font-weight="700">Pila</text>
+  <text x="580" y="132" class="nota">Una trama por cada método en curso,</text>
+  <text x="580" y="152" class="nota">con parámetros y variables locales.</text>
+  <text x="580" y="172" class="nota">Se libera al terminar el método.</text>
+
+  <text x="580" y="250" class="nota" font-weight="700">Referencias</text>
+  <text x="580" y="272" class="nota">La variable entrada está en la pila,</text>
+  <text x="580" y="292" class="nota">pero el objeto al que apunta está</text>
+  <text x="580" y="312" class="nota">en el montículo.</text>
+
+  <text x="580" y="410" class="nota" font-weight="700">Montículo</text>
+  <text x="580" y="432" class="nota">Los objetos creados durante la</text>
+  <text x="580" y="452" class="nota">ejecución. En Java los libera el</text>
+  <text x="580" y="472" class="nota">recolector de basura.</text>
+
+  <text x="580" y="530" class="nota" font-weight="700">Datos y código</text>
+  <text x="580" y="552" class="nota">Se cargan al empezar y duran</text>
+  <text x="580" y="572" class="nota">todo el programa.</text>
+</svg>

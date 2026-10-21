@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img" aria-labelledby="t d">
+  <title id="t">UD1 · El desarrollo de software</title>
+  <desc id="d">Portada de la unidad 1 del módulo Entornos de Desarrollo: un fichero de código fuente pasa por el compilador, se convierte en bytecode y se ejecuta en la máquina virtual de Java.</desc>
+  <defs>
+    <linearGradient id="fondo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d2b2a"/>
+      <stop offset="1" stop-color="#123f3a"/>
+    </linearGradient>
+    <linearGradient id="acento" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f89820"/>
+      <stop offset="1" stop-color="#ffc56b"/>
+    </linearGradient>
+    <marker id="flecha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#f89820"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="400" fill="url(#fondo)"/>
+  <!-- Retícula decorativa -->
+  <g stroke="#ffffff" stroke-opacity="0.05">
+    <path d="M0 50H1200M0 100H1200M0 150H1200M0 200H1200M0 250H1200M0 300H1200M0 350H1200"/>
+    <path d="M100 0V400M200 0V400M300 0V400M400 0V400M500 0V400M600 0V400M700 0V400M800 0V400M900 0V400M1000 0V400M1100 0V400"/>
+  </g>
+
+  <!-- Texto -->
+  <g font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+    <text x="60" y="80" fill="#a9d8cf" font-size="22" letter-spacing="3">ENTORNOS DE DESARROLLO · 1DAM</text>
+    <rect x="60" y="100" width="120" height="6" rx="3" fill="url(#acento)"/>
+    <text x="60" y="185" fill="#ffffff" font-size="64" font-weight="700">UD1</text>
+    <text x="60" y="245" fill="#ffffff" font-size="38" font-weight="600">El desarrollo de software</text>
+    <text x="60" y="320" fill="#f89820" font-size="22" font-weight="600">RA1 · Elementos, herramientas y fases</text>
+    <text x="60" y="350" fill="#f89820" font-size="22" font-weight="600">del desarrollo de un programa</text>
+  </g>
+
+  <!-- Fichero fuente -->
+  <g transform="translate(610,110)" font-family="'Cascadia Code', Consolas, 'DejaVu Sans Mono', monospace">
+    <path d="M0 0H110L140 30V180H0Z" fill="#ffffff" fill-opacity="0.08" stroke="#a9d8cf" stroke-width="2"/>
+    <path d="M110 0V30H140" fill="none" stroke="#a9d8cf" stroke-width="2"/>
+    <rect x="14" y="44" width="70" height="8" rx="4" fill="#f89820"/>
+    <rect x="28" y="64" width="90" height="8" rx="4" fill="#5fd3bc"/>
+    <rect x="28" y="84" width="60" height="8" rx="4" fill="#ffffff" fill-opacity="0.6"/>
+    <rect x="42" y="104" width="80" height="8" rx="4" fill="#5fd3bc"/>
+    <rect x="28" y="124" width="50" height="8" rx="4" fill="#ffffff" fill-opacity="0.6"/>
+    <rect x="14" y="144" width="30" height="8" rx="4" fill="#f89820"/>
+    <text x="70" y="210" fill="#a9d8cf" font-size="18" text-anchor="middle">Main.java</text>
+  </g>
+
+  <!-- Compilador -->
+  <path d="M760 190H808" stroke="#f89820" stroke-width="4" marker-end="url(#flecha)"/>
+  <g transform="translate(814,150)">
+    <rect width="96" height="80" rx="14" fill="#f89820" fill-opacity="0.18" stroke="#f89820" stroke-width="2"/>
+    <text x="48" y="48" fill="#ffffff" font-size="20" font-weight="600" text-anchor="middle" font-family="'Cascadia Code', Consolas, 'DejaVu Sans Mono', monospace">javac</text>
+  </g>
+
+  <!-- Bytecode -->
+  <path d="M912 190H952" stroke="#f89820" stroke-width="4" marker-end="url(#flecha)"/>
+  <g transform="translate(958,135)" font-family="'Cascadia Code', Consolas, 'DejaVu Sans Mono', monospace">
+    <rect width="96" height="110" rx="10" fill="#ffffff" fill-opacity="0.08" stroke="#5fd3bc" stroke-width="2"/>
+    <text x="48" y="36" fill="#5fd3bc" font-size="16" text-anchor="middle">CA FE</text>
+    <text x="48" y="60" fill="#5fd3bc" font-size="16" text-anchor="middle">BA BE</text>
+    <text x="48" y="84" fill="#5fd3bc" font-size="16" text-anchor="middle">00 41</text>
+    <text x="48" y="135" fill="#a9d8cf" font-size="18" text-anchor="middle">.class</text>
+  </g>
+
+  <!-- JVM -->
+  <path d="M1056 190H1090" stroke="#f89820" stroke-width="4" marker-end="url(#flecha)"/>
+  <g transform="translate(1096,140)">
+    <circle cx="44" cy="50" r="44" fill="#5fd3bc" fill-opacity="0.18" stroke="#5fd3bc" stroke-width="2"/>
+    <text x="44" y="57" fill="#ffffff" font-size="20" font-weight="700" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif">JVM</text>
+  </g>
+</svg>

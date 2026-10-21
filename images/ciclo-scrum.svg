@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 470" width="1000" height="470" role="img" aria-labelledby="t d">
+  <title id="t">Ciclo de Scrum</title>
+  <desc id="d">El propietario del producto ordena la pila del producto. En la planificación del sprint se eligen elementos y se forma la pila del sprint. Durante el sprint, de una a cuatro semanas, el equipo trabaja con un scrum diario de quince minutos. Al final hay un incremento que se muestra en la revisión del sprint, y después la retrospectiva. Lo aprendido vuelve a la pila del producto y empieza el siguiente sprint.</desc>
+  <defs>
+    <marker id="f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+    <marker id="fn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#f89820"/>
+    </marker>
+  </defs>
+  <style>
+    text { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; fill: #1e293b; }
+    .tit { font-size: 18px; font-weight: 700; }
+    .sub { font-size: 14px; fill: #475569; }
+  </style>
+
+  <rect width="1000" height="470" rx="16" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="40" y="44" font-size="22" font-weight="700">Un sprint de Scrum</text>
+
+  <!-- Pila del producto -->
+  <g transform="translate(40,110)">
+    <rect width="170" height="200" rx="10" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+    <text x="85" y="30" class="tit" text-anchor="middle">Pila del</text>
+    <text x="85" y="52" class="tit" text-anchor="middle">producto</text>
+    <rect x="20" y="70" width="130" height="18" rx="4" fill="#6366f1"/>
+    <rect x="20" y="96" width="130" height="18" rx="4" fill="#818cf8"/>
+    <rect x="20" y="122" width="130" height="18" rx="4" fill="#a5b4fc"/>
+    <rect x="20" y="148" width="130" height="18" rx="4" fill="#c7d2fe"/>
+    <text x="85" y="190" class="sub" text-anchor="middle">ordenada por valor</text>
+  </g>
+  <text x="125" y="340" class="sub" text-anchor="middle">la ordena el</text>
+  <text x="125" y="358" class="sub" text-anchor="middle">propietario del producto</text>
+
+  <!-- Planificación -->
+  <path d="M214 210H258" stroke="#475569" stroke-width="2.5" marker-end="url(#f)"/>
+  <g transform="translate(262,165)">
+    <rect width="140" height="90" rx="10" fill="#ffffff" stroke="#64748b" stroke-width="2"/>
+    <text x="70" y="38" class="tit" text-anchor="middle">Planificación</text>
+    <text x="70" y="60" class="tit" text-anchor="middle">del sprint</text>
+  </g>
+
+  <!-- Pila del sprint -->
+  <path d="M404 210H440" stroke="#475569" stroke-width="2.5" marker-end="url(#f)"/>
+  <g transform="translate(444,150)">
+    <rect width="120" height="120" rx="10" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+    <text x="60" y="30" class="tit" text-anchor="middle">Pila del</text>
+    <text x="60" y="52" class="tit" text-anchor="middle">sprint</text>
+    <rect x="20" y="70" width="80" height="14" rx="4" fill="#6366f1"/>
+    <rect x="20" y="92" width="80" height="14" rx="4" fill="#818cf8"/>
+  </g>
+
+  <!-- Sprint -->
+  <path d="M566 210H600" stroke="#475569" stroke-width="2.5" marker-end="url(#f)"/>
+  <g transform="translate(604,95)">
+    <circle cx="115" cy="115" r="110" fill="#fde7c7" stroke="#f89820" stroke-width="3"/>
+    <text x="115" y="90" class="tit" text-anchor="middle">Sprint</text>
+    <text x="115" y="112" class="sub" text-anchor="middle">de 1 a 4 semanas</text>
+    <circle cx="115" cy="160" r="40" fill="#ffffff" stroke="#f89820" stroke-width="2"/>
+    <text x="115" y="157" font-size="12" font-weight="700" text-anchor="middle">Scrum diario</text>
+    <text x="115" y="173" class="sub" font-size="12" text-anchor="middle">15 minutos</text>
+    <path d="M 153 128 A 50 50 0 1 1 77 128" fill="none" stroke="#f89820" stroke-width="2.5" marker-end="url(#fn)"/>
+  </g>
+
+  <!-- Incremento -->
+  <path d="M832 210H866" stroke="#475569" stroke-width="2.5" marker-end="url(#f)"/>
+  <g transform="translate(870,160)">
+    <rect width="100" height="100" rx="10" fill="#d5f3ec" stroke="#2a9d8f" stroke-width="2"/>
+    <text x="50" y="45" class="tit" text-anchor="middle">Incre-</text>
+    <text x="50" y="67" class="tit" text-anchor="middle">mento</text>
+  </g>
+
+  <!-- Revisión y retrospectiva -->
+  <path d="M920 262V350H760" stroke="#475569" stroke-width="2.5" fill="none" marker-end="url(#f)"/>
+  <g transform="translate(600,330)">
+    <rect width="156" height="56" rx="10" fill="#ffffff" stroke="#64748b" stroke-width="2"/>
+    <text x="78" y="25" class="tit" font-size="16" text-anchor="middle">Revisión</text>
+    <text x="78" y="45" class="sub" text-anchor="middle">con los interesados</text>
+  </g>
+  <path d="M598 358H540" stroke="#475569" stroke-width="2.5" marker-end="url(#f)"/>
+  <g transform="translate(384,330)">
+    <rect width="152" height="56" rx="10" fill="#ffffff" stroke="#64748b" stroke-width="2"/>
+    <text x="76" y="25" class="tit" font-size="16" text-anchor="middle">Retrospectiva</text>
+    <text x="76" y="45" class="sub" text-anchor="middle">cómo mejorar</text>
+  </g>
+  <path d="M382 358H260V316" stroke="#475569" stroke-width="2.5" fill="none" stroke-dasharray="7 5" marker-end="url(#f)"/>
+  <text x="290" y="410" class="sub">lo aprendido actualiza la pila del producto</text>
+  <text x="290" y="430" class="sub">y empieza el siguiente sprint</text>
+</svg>
