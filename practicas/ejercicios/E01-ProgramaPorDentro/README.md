@@ -35,7 +35,7 @@ Media: 7.0
 | Herramienta que has usado | |
 | Nombre del proceso | |
 | Identificador (PID) |18328, 7248 |
-| Memoria que ocupa | |
+| Memoria que ocupa | 00 |
 | Procesador (%) | |
 | Estado en que está, según el tema 1, y por qué | |
 
