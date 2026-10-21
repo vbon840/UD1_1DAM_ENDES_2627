@@ -37,7 +37,7 @@ Media: 7.0
 | Identificador (PID) |18328, 7248 |
 | Memoria que ocupa | 1.2.. K, 66.432 K |
 | Procesador (%) | 00 |
-| Estado en que está, según el tema 1, y por qué | |
+| Estado en que está, según el tema 1, y por qué | Bloqueado |
 
 ![Proceso de Java en el administrador de procesos](img/proceso.png)
 
