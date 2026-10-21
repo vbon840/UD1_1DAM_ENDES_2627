@@ -8,7 +8,7 @@
 <!-- Pega la primera línea de la salida de «java -version». -->
 
 ```text
-
+java 22.0.1 2024-04-16
 ```
 
 ## Salida del programa
