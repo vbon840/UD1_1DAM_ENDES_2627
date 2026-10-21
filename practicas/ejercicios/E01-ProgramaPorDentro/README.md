@@ -16,6 +16,12 @@
 <!-- Pega lo que aparece en la terminal al ejecutar «java Media.java» con 4 notas: 6, 8, 9 y 5. -->
 
 ```text
+¿Cuántas notas? 4
+Nota 1: 6
+Nota 2: 8
+Nota 3: 9
+Nota 4: 5
+Media: 7.0
 
 ```
 
