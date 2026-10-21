@@ -50,13 +50,13 @@ Media: 7.0
 |---|-------------------|------------|-----------------------------|-----------------|
 | 1 | Escribes `java Media.java` y pulsas Intro | El sistema operativo crea un proceso Java. Se compila el código fuente y la JVM comienza la ejecución del programa. | SSD, SO, RAM, CPU y JVM. | código, datos, Pila y Montículo. |
 | 2 | `Scanner entrada = new Scanner(System.in);` | Se crea un objeto para leer la entrada. | RAM, CPU y JVM. | Pila, Montículo. |
-| 3 | `System.out.print("¿Cuántas notas? ");` | Se muestrael mensaje en pantalla. | pantalla, SO, RAM, CPU y JVM | Código, datos estáticos y montículo. |
-| 4 | `int cantidad = entrada.nextInt();` | Esperando un número del usuario | teclado, SO, RAM, CPU y JVM | Pila |
-| 5 | `int[] notas = new int[cantidad];` | | | |
-| 6 | El bucle que pide y lee cada nota | | | |
-| 7 | `double media = calcularMedia(notas);` | Se crea una trama de método en la pila, el método lee los elementos del array en el montón, calcula el promedio y devuelve el resultado a main(). | | |
-| 8 | `System.out.println("Media: " + media);` | | | |
-| 9 | Termina `main` | | | |
+| 3 | `System.out.print("¿Cuántas notas? ");` | Se muestrael mensaje en pantalla. | pantalla, SO, RAM, CPU y JVM | Código, datos estáticos y Montículo. |
+| 4 | `int cantidad = entrada.nextInt();` | Se lee un número entero del teclado. El proceso espera si no hay datos disponibles. | teclado, SO, RAM, CPU y JVM | Pila |
+| 5 | `int[] notas = new int[cantidad];` | Se crea un array de cantidad elementos, inicializados a cero. | CPU, RAM y JVM. | Pila, Montículo |
+| 6 | El bucle que pide y lee cada nota | El bucle pide y guarda las notas en el array. | CPU, RAM, JVM, SO, teclado y pantalla. | Código, Pila, Montículo |
+| 7 | `double media = calcularMedia(notas);` | Se crea una trama de método en la pila, el método lee los elementos del array en el montón, calcula el promedio y devuelve el resultado a main(). | CPU, RAM, JVM | Código, Pila, Montículo |
+| 8 | `System.out.println("Media: " + media);` | Se muestra en pantalla el texto «Media: » junto con el valor calculado. | pantalla, SO, RAM, CPU y JVM | Código, datos estáticos, Pila y Montículo. |
+| 9 | Termina `main` | Termina el método main(), finaliza el proceso y se liberan sus recursos. | CPU, RAM, JVM y SO. | Pila |
 
 ## Cuando se acaba la memoria
 
