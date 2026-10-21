@@ -72,7 +72,7 @@ Explicación:
 
 1. ¿Cuántas tramas hay en la pila mientras se ejecuta `calcularMedia`? ¿De qué métodos son?
 
-   <!-- Tu respuesta -->
+   2 tramas: main(String[] args) → calcularMedia(int[] notas).
 
 2. ¿Por qué el proceso casi no usa el procesador mientras espera que escribas?
 
