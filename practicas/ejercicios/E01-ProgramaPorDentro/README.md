@@ -63,10 +63,12 @@ Media: 7.0
 <!-- Pega las dos primeras líneas del error y explica qué ha pasado y en qué zona de memoria. -->
 
 ```text
-
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+        at Media.main(Media.java:38)
 ```
 
 Explicación:
+El programa intenta crear un array de 100 millones de enteros. Cada int ocupa 4 bytes, por lo que el array necesita aproximadamente 400 MB. Como hemos limitado el montículo a 64 MB con -Xmx64m, no hay memoria suficiente y se produce OutOfMemoryError: Java heap space.
 
 ## Preguntas
 
