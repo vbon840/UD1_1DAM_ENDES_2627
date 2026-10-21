@@ -8,7 +8,7 @@
 <!-- Pega la primera línea de la salida de «java -version». -->
 
 ```text
-java 22.0.1 2024-04-16
+Las pruebas se realizaron en dos equipos: el del centro educativo (Java 22.0.1) y el personal (Java 25.0.3).
 ```
 
 ## Salida del programa
