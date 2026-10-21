@@ -37,7 +37,7 @@ Media: 7.0
 | Identificador (PID) |18328, 7248 |
 | Memoria que ocupa | 1.2.. K, 66.432 K |
 | Procesador (%) | 00 |
-| Estado en que está, según el tema 1, y por qué | Bloqueado |
+| Estado en que está, según el tema 1, y por qué | Bloqueado. Este proceso está esperando que el usuario introduzca un dato por teclado. Mientras espera, prácticamente no utiliza la CPU, pero sigue ocupando memoria RAM. |
 
 ![Proceso de Java en el administrador de procesos](img/proceso.png)
 
