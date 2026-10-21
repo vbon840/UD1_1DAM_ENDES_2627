@@ -78,12 +78,12 @@ El programa intenta crear un array de 100 millones de enteros. Cada int ocupa 4 
 
 2. ¿Por qué el proceso casi no usa el procesador mientras espera que escribas?
 
-   <!-- Tu respuesta -->
+   <!-- Tu respuesta --> Cuando el proceso está bloqueado esperando que el usuario introduzca un número por teclado, no necesita utilizar la CPU, por lo que el sistema operativo puede asignarla a otros procesos.
 
 3. Si ejecutas el programa dos veces a la vez, en dos terminales, ¿cuántos programas y cuántos procesos hay? ¿Comparten la memoria?
 
-   <!-- Tu respuesta -->
+   <!-- Tu respuesta --> Hay un programa y dos procesos, porque se ejecuta el mismo programa dos veces. Cada proceso tiene su propio espacio de memoria y trabaja con sus propios datos. No comparten directamente la memoria.
 
 4. El programa escribe en la pantalla con `System.out`. ¿Por qué no puede escribir directamente en ella?
 
-   <!-- Tu respuesta -->
+   <!-- Tu respuesta --> El programa no accede directamente al hardware. Utiliza `System.out` para enviar datos a la salida estándar, y la JVM y el sistema operativo se encargan de gestionar la comunicación con el terminal y la pantalla.
