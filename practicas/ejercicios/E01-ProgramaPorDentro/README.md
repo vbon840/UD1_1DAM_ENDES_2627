@@ -55,7 +55,7 @@ Media: 7.0
 | 5 | `int[] notas = new int[cantidad];` | Se crea un array de cantidad elementos, inicializados a cero. | CPU, RAM y JVM. | Pila, Montículo |
 | 6 | El bucle que pide y lee cada nota | El bucle pide y guarda las notas en el array. | CPU, RAM, JVM, SO, teclado y pantalla. | Pila (variable del bucle), montículo (elementos del array notas). |
 | 7 | `double media = calcularMedia(notas);` | Se crea una trama de método en la pila, el método lee los elementos del array en el montón, calcula el promedio y devuelve el resultado a main(). | CPU (ALU y registros), RAM (pila y montículo), JVM. | Código, Pila, Montículo |
-| 8 | `System.out.println("Media: " + media);` | Se muestra en pantalla el texto «Media: » junto con el valor calculado. | pantalla, SO, RAM, CPU y JVM | Código, datos estáticos, Pila y Montículo. |
+| 8 | `System.out.println("Media: " + media);` | Se muestra en pantalla el texto «Media: » junto con el valor calculado. | pantalla, SO, RAM, CPU y JVM | Pila (media) y montículo (String resultante). |
 | 9 | Termina `main` | Termina el método main(), finaliza el proceso y se liberan sus recursos. | CPU, RAM, JVM y SO. | --- |
 
 ## Cuando se acaba la memoria
