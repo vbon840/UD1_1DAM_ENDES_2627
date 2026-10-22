@@ -48,15 +48,15 @@ Media: 7.0
 
 | # | Paso del programa | Qué ocurre | Componentes que intervienen | Zona de memoria |
 |---|-------------------|------------|-----------------------------|-----------------|
-| 1 | Escribes `java Media.java` y pulsas Intro | El sistema operativo crea un proceso Java. Se compila el código fuente y la JVM comienza la ejecución del programa. | SSD, SO, RAM, CPU y JVM. | código, datos, Pila y Montículo. |
+| 1 | Escribes `java Media.java` y pulsas Intro | El sistema operativo crea un proceso Java. Se compila el código fuente y la JVM comienza la ejecución del programa. | SSD, SO, RAM, CPU y JVM. | Código y pila (inicio de main); montículo disponible para objetos. |
 | 2 | `Scanner entrada = new Scanner(System.in);` | Se crea un objeto para leer la entrada. | RAM, CPU y JVM. | Pila, Montículo. |
-| 3 | `System.out.print("¿Cuántas notas? ");` | Se muestrael mensaje en pantalla. | pantalla, SO, RAM, CPU y JVM | Código, datos estáticos y Montículo. |
+| 3 | `System.out.print("¿Cuántas notas? ");` | Se muestrael mensaje en pantalla. | Llamada al sistema, controlador y pantalla (periférico de salida) | --- |
 | 4 | `int cantidad = entrada.nextInt();` | Se lee un número entero del teclado. El proceso espera si no hay datos disponibles. | teclado, SO, RAM, CPU y JVM | Pila |
 | 5 | `int[] notas = new int[cantidad];` | Se crea un array de cantidad elementos, inicializados a cero. | CPU, RAM y JVM. | Pila, Montículo |
-| 6 | El bucle que pide y lee cada nota | El bucle pide y guarda las notas en el array. | CPU, RAM, JVM, SO, teclado y pantalla. | Código, Pila, Montículo |
-| 7 | `double media = calcularMedia(notas);` | Se crea una trama de método en la pila, el método lee los elementos del array en el montón, calcula el promedio y devuelve el resultado a main(). | CPU, RAM, JVM | Código, Pila, Montículo |
+| 6 | El bucle que pide y lee cada nota | El bucle pide y guarda las notas en el array. | CPU, RAM, JVM, SO, teclado y pantalla. | Pila (variable del bucle), montículo (elementos del array notas). |
+| 7 | `double media = calcularMedia(notas);` | Se crea una trama de método en la pila, el método lee los elementos del array en el montón, calcula el promedio y devuelve el resultado a main(). | CPU (ALU y registros), RAM (pila y montículo), JVM. | Código, Pila, Montículo |
 | 8 | `System.out.println("Media: " + media);` | Se muestra en pantalla el texto «Media: » junto con el valor calculado. | pantalla, SO, RAM, CPU y JVM | Código, datos estáticos, Pila y Montículo. |
-| 9 | Termina `main` | Termina el método main(), finaliza el proceso y se liberan sus recursos. | CPU, RAM, JVM y SO. | Pila |
+| 9 | Termina `main` | Termina el método main(), finaliza el proceso y se liberan sus recursos. | CPU, RAM, JVM y SO. | --- |
 
 ## Cuando se acaba la memoria
 
